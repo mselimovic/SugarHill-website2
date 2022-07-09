@@ -58,6 +58,29 @@ img{
   margin: 0 5px;
   
 }
+
+
+/* Hide nested by default */
+.navbar ul li ul {
+display: none;
+
+}
+/* Nested dropdown show */
+.navbar ul li:hover ul {
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 350px;
+  margin-top: 1rem;
+ 
+
+}
+.navbar ul li:hover ul li a{
+  display: block;
+  line-height: 1.2rem;
+
+}
+
 .navbar a:hover{
   border-bottom: #28a745 2px solid;
 }
@@ -66,8 +89,8 @@ img{
 }
 .navbar .logo{
   font-weight: 400;
-  
 }
+
 /* header */
 .hero {
   background: url('../images/home/showcase3.jpg') no-repeat center center/cover;
